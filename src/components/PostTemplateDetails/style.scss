@@ -69,7 +69,7 @@
         margin-right: auto;
     }
     &__tags {
-        @include margin-bottom(.5);
+        @include margin-bottom(0.5);
         &-list {
             list-style: none;
             margin: 0 -5px;

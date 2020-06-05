@@ -1,16 +1,15 @@
-const lost = require('lost')
-const pxtorem = require('postcss-pxtorem')
+const lost = require('lost');
+const pxtorem = require('postcss-pxtorem');
 
-const url = 'https://lumen.netlify.com'
+const url = 'https://lumen.netlify.com';
 
 module.exports = {
   siteMetadata: {
     url,
     siteUrl: url,
-    title: 'Blog by John Doe',
-    subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-    copyright: '© All rights reserved.',
+    title: 'technicallyJosh',
+    subtitle: 'Software engineer, guitarist, hockey fan, husband, dog dad.',
+    copyright: '© Josh Newman. All rights reserved.',
     disqusShortname: '',
     menu: [
       {
@@ -19,21 +18,16 @@ module.exports = {
       },
       {
         label: 'About me',
-        path: '/about/',
-      },
-      {
-        label: 'Contact me',
-        path: '/contact/',
+        path: '/about',
       },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vk: '#',
+      name: 'Josh Newman',
+      email: 'me@technicallyjosh.com',
+      twitter: 'technicallyjosh',
+      github: 'technicallyjosh',
+      stackoverflow: '2414739/technicallyjosh',
+      linkedin: 'technicallyjosh',
     },
   },
   plugins: [
@@ -68,7 +62,7 @@ module.exports = {
                   url: site.siteMetadata.url + edge.node.fields.slug,
                   guid: site.siteMetadata.url + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': edge.node.html }],
-                })
+                }),
               ),
             query: `
               {
@@ -173,4 +167,4 @@ module.exports = {
       },
     },
   ],
-}
+};

@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import moment from 'moment'
-import './style.scss'
+import React from 'react';
+import { Link } from 'gatsby';
+import moment from 'moment';
+import './style.scss';
 
 class Post extends React.Component {
   render() {
@@ -10,8 +10,9 @@ class Post extends React.Component {
       date,
       category,
       description,
-    } = this.props.data.node.frontmatter
-    const { slug, categorySlug } = this.props.data.node.fields
+      tags,
+    } = this.props.data.node.frontmatter;
+    const { slug, categorySlug, tagSlugs } = this.props.data.node.fields;
 
     return (
       <div className="post">
@@ -20,7 +21,7 @@ class Post extends React.Component {
             className="post__meta-time"
             dateTime={moment(date).format('MMMM D, YYYY')}
           >
-            {moment(date).format('MMMM YYYY')}
+            {moment(date).format('MMMM D, YYYY')}
           </time>
           <span className="post__meta-divider" />
           <span className="post__meta-category" key={categorySlug}>
@@ -35,12 +36,27 @@ class Post extends React.Component {
           </Link>
         </h2>
         <p className="post__description">{description}</p>
+        <div className="post-single__tags">
+          <ul className="post-single__tags-list">
+            {tags &&
+              tags.map((tag, i) => (
+                <li className="post-single__tags-list-item" key={tag}>
+                  <Link
+                    to={tagSlugs[i]}
+                    className="post-single__tags-list-item-link"
+                  >
+                    {tags[i]}
+                  </Link>
+                </li>
+              ))}
+          </ul>
+        </div>
         <Link className="post__readmore" to={slug}>
           Read
         </Link>
       </div>
-    )
+    );
   }
 }
 
-export default Post
+export default Post;
