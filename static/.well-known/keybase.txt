@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/technicallyjosh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://technicallyjosh.com
+  * I am technicallyjosh (https://keybase.io/technicallyjosh) on keybase.
+  * I have a public key ASBgXSQqYwKiJ-53drURxCVDQjsP8rZG4Edfi2-teLr-mQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209b84a96176f4ff12e563d966d808199879383ed887405a89c27c58fa48b9ec0c0a",
+      "host": "keybase.io",
+      "kid": "0120605d242a6302a227ee7776b511c42543423b0ff2b646e0475f8b6fad78bafe990a",
+      "uid": "8e87639daca8f8658fe969c8f0386419",
+      "username": "technicallyjosh"
+    },
+    "merkle_root": {
+      "ctime": 1591458505,
+      "hash": "297ef290f109ec2e16503bb654d251f93dc6f44b5c6b953eea1483a28595ba06bc819ad1e02d25f25309098e234758afe0b826b6b61d17f83d9a7e7ef5e2d2a8",
+      "hash_meta": "9266d3825024ac259f17e93197b8f68e914562f62d6f579e180e230864cc998c",
+      "seqno": 16555118
+    },
+    "service": {
+      "entropy": "VmOdVDR75DsrDQS/Ini+IJtg",
+      "hostname": "technicallyjosh.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1591458521,
+  "expire_in": 504576000,
+  "prev": "99792ec30c238fb4558893ef47232a35011fd520644e61eb36deeebab4b00d1a",
+  "seqno": 30,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgYF0kKmMCoifud3a1EcQlQ0I7D/K2RuBHX4tvrXi6/pkKp3BheWxvYWTESpcCHsQgmXkuwwwjj7RViJPvRyMqNQEf1SBkTmHrNt7uurSwDRrEICL+sfdukj97LootY/hFiLZl1Kbby3f/WmhnXJMjbG6MAgHCo3NpZ8RAc5SFZ0jnDv70TKyTfWDEx95NKmGzi70UQO7HZr50565kZU3zMZcYred8a/DOTURE+h/gncx28xMcRanBNJ6zA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKR29S8LTx0mSt/RcPD2Q3kuaGqOTAWjXJ5inZy4YQuro3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/technicallyjosh
+
+==================================================================
